@@ -1,65 +1,103 @@
-***
+# 👨‍🍳 Chef Gemini
 
-# Chef Gemini
+**Chef Gemini** is an AI-powered culinary assistant built with React and Vite. It utilizes Google's Gemini AI to help users generate recipes, plan meals, and answer cooking-related questions.
 
-Chef Gemini is an AI-powered recipe assistant that helps users generate creative, step-by-step recipes from simple prompts. It uses a Gemini-based backend (via `ai.js`) and a React + Vite frontend to provide an interactive cooking assistant experience. [https://github.com/yxshkm404/Chef-Gemini-](https://github.com/yxshkm404/Chef-Gemini-)
+## 🚀 Features
 
-## Features
+* **AI Recipe Generation:** Generate unique recipes based on ingredients you have.
+* **Interactive UI:** Get cooking assistance via a clean interface.
+* **Fast Performance:** Built on top of Vite for lightning-fast HMR and build times.
+* **Responsive Design:** Works on desktop and mobile devices.
 
-- Prompt-based recipe generation using AI.
-- Clean React frontend built with Vite.
-- Modular components for header, main content, and layout.
-- Responsive styling with custom CSS.
-- Simple structure that is easy to extend with more features (favorites, history, etc.).  
+## 🛠️ Tech Stack
 
-## Tech stack
+* **Frontend:** [React](https://reactjs.org/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **AI Integration:** [Google Gemini API](https://ai.google.dev/)
+* **Styling:** CSS
+* **State Management:** React Hooks
 
-- React (JSX components in `frontend/`)
-- Vite as the build tool (`vite.config.js`)
-- Custom CSS (`frontend/index.css`)
-- AI integration via custom helper (`frontend/ai.js`)
+## 📂 Project Structure
 
-## Project structure
+```text
+CHEF GEMINI/
+├── components/         # Reusable UI components
+├── images/             # Static assets
+├── ai.js               # Logic for handling Gemini AI API calls
+├── App.jsx             # Main application component
+├── Header.jsx          # Header/Navigation component
+├── Main.jsx            # Main content area component
+├── index.css           # Global styles
+├── index.html          # HTML entry point
+├── index.jsx           # React entry point
+├── package.json        # Project metadata and dependencies
+└── vite.config.js      # Vite configuration
+```
 
-- `frontend/App.jsx` – Root application component.
-- `frontend/Header.jsx` – Top navigation / branding header.
-- `frontend/Main.jsx` – Main UI for prompts, responses, and recipe display.
-- `frontend/ai.js` – AI helper for interacting with the Gemini API or backend.
-- `frontend/index.jsx` – React entry point.
-- `frontend/index.html` – HTML template for Vite.
-- `frontend/index.css` – Global styles.
-- `frontend/components/` – Additional reusable components.
-- `frontend/images/` – Static image assets.
+## 🏁 Getting Started
 
-## Getting started
+Follow these steps to set up the project locally on your machine.
 
-1. Clone the repository:
-   - `git clone https://github.com/yxshkm404/Chef-Gemini-.git`
-   - `cd Chef-Gemini-/frontend`
-2. Install dependencies:
-   - `npm install`
-3. Configure your Gemini / AI API:
-   - Open `frontend/ai.js`
-   - Add your API key and endpoint where indicated.
-4. Start the development server:
-   - `npm run dev`
-5. Open the URL shown in your terminal (usually `http://localhost:5173`) in your browser.
+### Prerequisites
 
-## Build and deploy
+* Node.js (v14 or higher)
+* npm (or yarn/pnpm)
+* A Google Gemini API Key
 
-- Create a production build:
-  - `npm run build`
-- Preview the build locally:
-  - `npm run preview`
-- Deploy the contents of `dist/` to any static hosting (Netlify, Vercel, GitHub Pages, etc.).
+### Installation
 
-## Future enhancements
+1. **Clone the repository**
 
-- User authentication and saved recipe history.
-- Filters for cuisine, dietary preference, and difficulty.
-- Image support for generated dishes.
-- Export / share recipes as PDF or via social media.
+```bash
+git clone https://github.com/yxshkm404/Chef-Gemini-.git
+cd Chef-Gemini/frontend
+```
 
-## License
+2. **Install dependencies**
 
-This project is open for personal and educational use. Add a specific license file (for example MIT) if you want others to reuse or contribute formally.
+```bash
+npm install
+```
+
+3. **Configure Environment Variables**
+
+Create a `.env` file in the root directory and add your Gemini API key. (Note: Ensure your variable name matches what is used in `ai.js`, usually prefixed with `VITE_` for Vite projects).
+
+```env
+VITE_GEMINI_API_KEY=your_api_key_here
+```
+
+4. **Run the development server**
+
+```bash
+npm run dev
+```
+
+5. **Open your browser** and navigate to `http://localhost:5173`.
+
+## 💡 Usage
+
+1. Enter the ingredients you have in your fridge or a specific dish you want to cook.
+2. Click the generate button.
+3. Chef Gemini will provide a detailed recipe with instructions!
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
+
+## 📞 Contact
+
+**Yaswanth Kumar**
+
+GitHub: [@yxshkm404](https://github.com/yxshkm404)
+
+
+---
+
+Made with ❤️ and code.
